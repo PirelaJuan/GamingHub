@@ -1,0 +1,43 @@
+ .topnav {
+    overflow: hidden;
+    background-color: #050505;
+    width: 100%;
+    overflow-x: hidden;
+    position: fixed;
+    display: flex;
+    align-items: center;
+    left: 0px;
+    top: 0px;
+    z-index: 1000; 
+
+  }
+  
+  .topnav input[type="text"] {
+    
+    padding: 10px;
+    border: none;
+    margin: 8px 0;
+    font-size: 17px;
+  }
+  
+  .topnav a {
+    display: block;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+  }
+  
+  .topnav a.create:hover {
+    background-color: #5b1086;
+   
+  }
+  
+  .topnav a.create {
+    background-color: #35094e;
+    color: white;
+    transition: background-color 0.2s;
+  }
+  
+  

@@ -1,0 +1,54 @@
+.post-info {
+    
+    
+    border-radius: 10px; 
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.29); 
+    padding: 20px; 
+    margin: 20px auto; 
+    width: 1000px; 
+    
+    text-align: left;
+    padding-left: 40px;
+}
+
+.post-info h1 {
+    font-size: 24px; 
+    font-weight: bold; 
+    color: #ffffff; 
+    margin-bottom: 10px; 
+}
+
+.post-info h3 {
+    font-size: 14px; 
+    color: #eeeded; 
+    margin-bottom: 15px; 
+}
+
+.post-info img {
+    display: block; 
+    max-width: 500px; 
+    height: auto; 
+    margin: 15px 0; 
+    border-radius: 5px; 
+}
+
+.post-info p {
+    font-size: 16px; 
+    color: #eeeded; 
+    line-height: 1.6; 
+    margin-bottom: 20px; 
+}
+
+.button-layout{
+    display: flex; 
+    
+    align-items: center; 
+    margin-top: 20px; 
+}
+
+.vote{
+    margin-right: 790px;
+}
+.edit{
+    margin-right: 5px;
+}
