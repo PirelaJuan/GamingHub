@@ -1,14 +1,17 @@
+
+
 .post-info {
     
     
     border-radius: 10px; 
     box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.29); 
-    padding: 20px; 
+    padding: 40px; 
     margin: 20px auto; 
     width: 1000px; 
-    
+    background-color: #353434;
+   
     text-align: left;
-    padding-left: 40px;
+    
 }
 
 .post-info h1 {
@@ -48,7 +51,25 @@
 
 .vote{
     margin-right: 790px;
+    justify-content: center;
+    align-items: center;
+    
 }
 .edit{
     margin-right: 5px;
 }
+
+.comment-edit{
+    
+    padding: 10px 15px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.29); 
+    color-scheme: light dark;
+    background-color: (255, 255, 255, 0.87);
+    padding: 20px 40px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+    background-color: #242424;
+}
+

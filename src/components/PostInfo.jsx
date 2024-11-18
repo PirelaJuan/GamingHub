@@ -29,15 +29,24 @@ function PostInfo() {
     };
 
     const deletePost = async (event) => {
+        
+        event.preventDefault();
+        await supabase
+            .from('comments')
+            .delete()
+            .eq('idComment', state.id);
+        
+
         event.preventDefault();
         await supabase
             .from('Posts')
             .delete()
             .eq('id', state.id);
-
-        window.location = '/';
+        
+         window.location = '/';
     };
 
+    
     const commentPost = async (event) => {
         event.preventDefault();
 
@@ -88,8 +97,24 @@ function PostInfo() {
                 <button className='delete' onClick={deletePost}>🗑️</button>
             </div>
 
-            <form onSubmit={commentPost}>
+            <br />
+            <div className='comment-edit'>
+
+                <div className="comments-section">
+                <h3>Comments</h3>
+                {comments.length > 0 ? (
+                    comments.map((comment, index) => (
+                        <p className="paragraph" key={index}>{comment.comment}</p>
+                    ))
+                ) : (
+                    <p>No comments yet. Be the first to comment!</p>
+                )}
+               </div>
+
+
+              <form className="'comment-input'" onSubmit={commentPost}>
                 <input 
+                    
                     type="text" 
                     name="comment" 
                     id="comment" 
@@ -97,21 +122,11 @@ function PostInfo() {
                     value={userComment}
                     onChange={handleChange}
                 />
-                <div>
-                    <input className="button" type="submit" value="Submit" />
-                </div>
-            </form>
+               
+              </form>
 
-            <div className="comments-section">
-                <h3>Comments</h3>
-                {comments.length > 0 ? (
-                    comments.map((comment, index) => (
-                        <p key={index}>{comment.comment}</p>
-                    ))
-                ) : (
-                    <p>No comments yet. Be the first to comment!</p>
-                )}
             </div>
+            
         </div>
     );
 }

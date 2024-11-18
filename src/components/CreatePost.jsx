@@ -44,7 +44,7 @@ return(
                 </div>
 
                 <div className='mini-container'>
-                    <input 
+                    <textarea 
                     type="text" 
                     id='content'
                     name='content'

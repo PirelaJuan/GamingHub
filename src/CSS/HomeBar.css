@@ -6,10 +6,16 @@
     position: fixed;
     display: flex;
     align-items: center;
+    
+    
     left: 0px;
     top: 0px;
     z-index: 1000; 
 
+  }
+  .name{
+    padding-right: 300px;
+    padding-left: 80px;
   }
   
   .topnav input[type="text"] {
